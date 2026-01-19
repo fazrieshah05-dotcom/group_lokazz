@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Air Runner - Lokazz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body class="product-detail-page">
+   <header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">LOKAZZ<span>.</span></a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<main>
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt;
+        <a href="product.html">Collections</a> &gt;
+        <a href="#">Classic</a> &gt;
+        <span>Timeless Trainer</span>
+    </div>
+    <section class="product-detail-section">
+        <div class="product-images">
+            <img src="shoeimage/classic8.jpg" alt="Classic Air Runner" class="main-product-image">
+        </div>
+        <div class="product-info-card">
+            <h1 class="product-title">Timeless Trainer</h1>
+            <p class="product-price">RM 99.00</p>
+            <p class="price-note">Price incl. 0% TAX</p>
+            <div class="color-selector">
+            <div class="size-selector">
+                <h3>Size</h3>
+                <div class="size-options">
+                    <button class="size-btn">UK 7</button>
+                    <button class="size-btn">UK 8</button>
+                    <button class="size-btn">UK 9</button>
+                </div>
+                <a href="#" class="size-guide-link">SIZE GUIDE</a>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart('Classic Air Runner', 299)">Add to Cart</button>
+        </div>
+</main>
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column"><h3>Support</h3><ul><li><a href="contact.html">Contact Us</a></li><li><a href="#">Size Guide</a></li></ul></div>
+        <div class="footer-column"><h3>About Lokazz</h3><ul><li><a href="aboutus.html">Company</a></li></ul></div>
+        <div class="footer-column inspiration-col">
+            <h3>More Inspiration</h3>
+            <div class="social-icons"><a href="#">FB</a> <a href="#">IG</a></div>
+            <div class="fastest-box"><p>TRAIN WITH THE FASTEST</p></div>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Lokazz Shoes - All Rights Reserved.</p></div>
+</footer>
+<script>
+    function addToCart(name, price) { alert(name + " has been added to your cart!"); }
+</script>
+</body>
+</html>

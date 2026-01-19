@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lokazz Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="home-page">
+
+    <!-- NAVIGATION BAR HTML FROM ABOUTUS.HTML -->
+    <header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">LOKAZZ<span></span></a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <img src="image/slider1.jpg.jpg" class="slide active">
+                <img src="image/slider2.jpg.jpg" class="slide">
+                <img src="image/slider3.jpg.jpg" class="slide">
+            </div>
+            
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <h1 id="collection-title" style="font-family: 'Montserrat', sans-serif; letter-spacing: 5px;">MODEL COLLECTION</h1>
+        
+        <div class="collection-container">
+            <a href="product.html#classic-section" class="collection-item">
+                <img src="shoeimage/classic1.jpg" alt="Classic" width="300">
+                <h2 class="collection-label" style="font-family: 'Anton&family', sans-serif; letter-spacing: 5px;">CLASSIC</h2>
+            </a>
+
+            <a href="product.html#sporty-section" class="collection-item">
+                <img src="shoeimage/sporty1.jpg.png" alt="Sporty" width="300">
+                <h2 class="collection-label" style="font-family: 'Anton&family', sans-serif; letter-spacing: 5px;">SPORTY</h2>
+            </a>
+
+            <a href="product.html#sandalz-section" class="collection-item">
+                <img src="shoeimage/sandalz.png" alt="Sandalz" width="300">
+                <h2 class="collection-label" style="font-family: 'Anton&family', sans-serif; letter-spacing: 5px;">SANDALZ</h2>
+            </a>
+        </div>
+        
+        <h1 id="collection-title" style="font-family: 'Montserrat', sans-serif; letter-spacing: 5px;">Why Lokazz?</h1>
+        <section class="benefits-vertical">
+            <div class="benefit-item item-1">
+                <h2>LOCALLY MADE</h2>
+                <h4>Our shoe designs are 100% made by local Malaysians.</h4>
+            </div>
+
+            <div class="benefit-item item-2">
+               <h2>QUALITY IS OUR PRIORITY</h2>
+               <h4>Ensuring customers only get high quality products for user comfort.</h4>
+            </div>
+
+            <div class="benefit-item item-3">
+                <h2>FAST DELIVERY</h2>
+                <h4>Your order will be processed and shipped promptly throughout Malaysia.</h4>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="product.html#size-guide">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Lokazz</h3>
+                <ul>
+                    <li><a href="aboutus.html">Company</a></li>
+                </ul>
+            </div>
+            <div class="footer-column inspiration-col">
+                <h3>More Inspiration</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/locazz_official?igsh=ajBkaDMxM3U1MnZ4">IG</a> 
+                    <a href="https://www.tiktok.com/@lokazz61?_r=1&_t=ZS-93CHssb8eLB">TT</a> 
+                </div>
+                <div class="fastest-box">
+                    <p>TRAIN WITH THE FASTEST</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lokazz Shoes - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
